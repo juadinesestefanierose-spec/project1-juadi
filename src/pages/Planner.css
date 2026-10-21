@@ -1,0 +1,282 @@
+
+.planner-page {
+  min-height: 100vh;
+  background: #fffdf8;
+  color: #354b46;
+}
+
+
+.planner-eyebrow {
+  margin: 0 0 12px;
+  color: #bd805e;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.planner-hero h1 {
+  margin: 0;
+  color: #244d46;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.15;
+}
+
+.planner-hero h1 span {
+  color: #bd805e;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+}
+
+.planner-hero > p:last-child {
+  max-width: 550px;
+  margin: 18px auto 0;
+  color: #f5fff6;
+  line-height: 1.8;
+}
+
+.planner-content {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 25px 35px 70px;
+}
+
+.planner-section {
+  padding-top: 55px;
+  scroll-margin-top: 25px;
+}
+
+.planner-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.planner-section-heading h2 {
+  margin: 0;
+  color: #244d46;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+.planner-section-heading > div > p:last-child {
+  margin: 9px 0 0;
+  color: #858b82;
+  line-height: 1.6;
+}
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.planner-card {
+  overflow: hidden;
+  border: 1px solid #e8e7df;
+  border-radius: 18px;
+  background: white;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.planner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(36, 77, 70, 0.08);
+}
+
+.planner-card-image {
+  height: 190px;
+  overflow: hidden;
+  background: #edf1e9;
+}
+
+.planner-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.planner-card-content {
+  padding: 20px;
+}
+
+.planner-card-category {
+  margin: 0 0 8px;
+  color: #bd805e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.planner-card-content h3 {
+  margin: 0;
+  color: #244d46;
+  font-size: 1.15rem;
+}
+
+.planner-card-description {
+  min-height: 22px;
+  margin: 8px 0 15px;
+  color: #858b82;
+  font-size: 0.85rem;
+}
+
+.planner-price {
+  margin: 0 0 20px;
+  color: #315e53;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.planner-price span {
+  color: #92968e;
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
+.planner-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #eeede6;
+}
+
+.planner-subtotal {
+  color: #244d46;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.planner-meal-icon {
+  display: grid;
+  height: 100px;
+  place-items: center;
+  background: #edf1e9;
+  color: #bd805e;
+  font-size: 2.5rem;
+}
+
+.planner-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 7%;
+  border-top: 1px solid #e8e5dc;
+  background: rgba(255, 253, 248, 0.97);
+  backdrop-filter: blur(10px);
+}
+
+.planner-footer-note {
+  margin: 0;
+  color: #858b82;
+  font-size: 0.85rem;
+}
+
+.planner-footer-total {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.planner-footer-total span {
+  color: #858b82;
+  font-size: 0.8rem;
+}
+
+.planner-footer-total strong {
+  color: #244d46;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.planner-review-button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 30px;
+  background: #315e53;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.planner-review-button:hover {
+  background: #24473f;
+}
+
+@media (max-width: 900px) {
+  .planner-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .planner-footer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .planner-content {
+    padding: 10px 18px 45px;
+  }
+
+  .planner-hero {
+    padding: 55px 20px;
+  }
+
+  .planner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-footer {
+    gap: 15px;
+    padding: 16px 18px;
+  }
+
+  .planner-footer > div:first-child {
+    width: 100%;
+  }
+
+  .planner-review-button {
+    margin-left: auto;
+  }
+}
+.planner-hero-background {
+  min-height: 420px;
+  width: 100%;
+  padding: 80px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  text-align: center;
+}
+
+.planner-hero {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.planner-hero h1,
+.planner-hero p {
+  color: white;
+}
+
+.planner-hero h1 span {
+  color: #f4d6a0;
+}

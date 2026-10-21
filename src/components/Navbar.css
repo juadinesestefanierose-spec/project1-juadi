@@ -1,0 +1,68 @@
+
+.navbar {
+  width: 100%;
+  min-height: 76px;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fffdf8;
+  border-bottom: 1px solid #e8e5dc;
+}
+
+.navbar-brand {
+  color: #244d46;
+  font-family: "Sacramento", cursive;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-brand span {
+  color: #d18b63;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-links a {
+  color: #354b46;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #d18b63;
+}
+
+.navbar-details {
+  padding: 11px 20px;
+  color: white;
+  background: #315e53;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.navbar-details:hover {
+  background: #24473f;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

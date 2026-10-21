@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sacramento&display=swap');
+
+.home-page {
+  min-height: 100vh;
+  color: #244c4d;
+  font-family: "DM Sans", sans-serif;
+  background: #f8f7f1;
+}
+
+.home-navbar {
+  min-height: 88px;
+  padding: 12px 6%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8f7f1;
+}
+
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #244c4d;
+  text-decoration: none;
+}
+
+.home-brand img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.home-brand span {
+  font-family: "Sacramento", cursive;
+  font-size: 2.6rem;
+}
+
+.home-brand-subtitle {
+  align-self: center;
+  margin-top: 20px;
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+}
+
+.home-hero {
+  position: relative;
+  min-height: calc(100vh - 88px);
+  display: flex;
+  align-items: center;
+  padding: 70px 10%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(248, 247, 241, 0.96) 0%,
+    rgba(248, 247, 241, 0.82) 42%,
+    rgba(248, 247, 241, 0.12) 100%
+  );
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+}
+
+.home-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.home-content h1 {
+  margin: 18px 0;
+  font-family: "Sacramento", cursive;
+  font-size: clamp(3.8rem, 7vw, 6rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.home-description {
+  max-width: 410px;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #496363;
+}
+
+.home-start-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+  padding: 15px 27px;
+  border: none;
+  border-radius: 40px;
+  background: #244c4d;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.home-start-button:hover {
+  background: #356b69;
+  transform: translateY(-2px);
+}
+
+.home-note {
+  margin-top: 25px;
+  font-size: 0.82rem;
+  color: #607775;
+}
+
+.home-dinosaur {
+  position: absolute;
+  z-index: 1;
+  right: 7%;
+  bottom: 35px;
+  width: clamp(110px, 16vw, 220px);
+  max-height: 250px;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.home-image-caption {
+  position: absolute;
+  right: 7%;
+  bottom: 18px;
+  z-index: 1;
+  font-size: 0.72rem;
+  color: #244c4d;
+}
+
+@media (max-width: 650px) {
+  .home-navbar {
+    min-height: 72px;
+    padding: 10px 5%;
+    gap: 8px;
+  }
+
+  .home-brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .home-brand span {
+    font-size: 2.1rem;
+  }
+
+  .home-brand-subtitle {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+  }
+
+  .home-hero {
+    min-height: calc(100vh - 72px);
+    padding: 55px 7%;
+    align-items: flex-start;
+    background-position: 60% center;
+  }
+
+  .home-overlay {
+    background: rgba(248, 247, 241, 0.82);
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-description {
+    font-size: 0.92rem;
+  }
+
+ 
+
+  .home-image-caption {
+    right: 4%;
+    bottom: 12px;
+    max-width: 150px;
+    text-align: right;
+    font-size: 0.65rem;
+  }
+}

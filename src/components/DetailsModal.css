@@ -1,0 +1,147 @@
+
+.details-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(27, 43, 38, 0.55);
+  backdrop-filter: blur(5px);
+}
+
+.details-modal {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 38px;
+  border-radius: 22px;
+  background: #fffdf8;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.details-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #edf1e9;
+  color: #315e53;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.details-eyebrow {
+  margin: 0 0 8px;
+  color: #c0805b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.details-modal h2 {
+  margin: 0;
+  color: #244d46;
+  font-size: 2rem;
+}
+
+.details-description {
+  margin: 10px 0 28px;
+  color: #777e76;
+}
+
+.details-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.details-table th {
+  padding: 14px 12px;
+  background: #edf1e9;
+  color: #315e53;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.details-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e9e8df;
+  color: #414b44;
+  font-size: 0.9rem;
+}
+
+.details-item-type {
+  display: block;
+  margin-top: 4px;
+  color: #92968e;
+  font-size: 0.75rem;
+}
+
+.details-empty {
+  padding: 25px 0;
+  color: #777e76;
+  text-align: center;
+}
+
+.details-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 14px;
+  background: #e8efe8;
+  color: #244d46;
+}
+
+.details-total span {
+  font-weight: 600;
+}
+
+.details-total strong {
+  font-size: 1.5rem;
+}
+
+.details-done {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: #315e53;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.details-done:hover {
+  background: #24473f;
+}
+
+@media (max-width: 600px) {
+  .details-modal {
+    padding: 28px 18px;
+  }
+
+  .details-modal h2 {
+    font-size: 1.6rem;
+  }
+
+  .details-total strong {
+    font-size: 1.2rem;
+  }
+}
